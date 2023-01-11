@@ -1,0 +1,71 @@
+.favorites{
+    padding: 45px 60px;
+    &__title{
+        display: flex;
+        align-items: center;
+        &-back{
+            margin-right: 21px;
+            margin-bottom: -7px;
+        }
+        margin-bottom: 35px;
+    }
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px 40px;    
+    }
+    &Empty{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__title{
+            margin-top: 20px;
+            margin-bottom: 9px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 40px;
+            text-align: center;
+
+        }
+        &__btn{
+            width: 245px;
+            height: 55px;
+            background: #9DD458;
+            border-radius: 18px;
+            color: #fff;
+            position: relative;
+            border: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            cursor: pointer;
+            &:hover{
+
+                &::after{
+                    left: 28px;
+                    transition: all 0.3s;
+                }
+            }
+            &::after{
+                content: "";
+                transition: all 0.3s;
+                position: absolute;
+                width: 14px;
+                height: 12px;
+                top: 21px;
+                left: 31px;
+                background-image: url('../../public/images/arrow-left.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
