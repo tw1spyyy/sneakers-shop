@@ -6,16 +6,8 @@ import { SneakerItem } from "../SneakerItem";
 import { SneakerSkeleton } from "../SneakerSkeleton";
 
 import debounce from "lodash.debounce";
+import { ItemType } from "../../Types etc/Types";
 
-export type ItemType = {
-  id?: string;
-  name: string;
-  price: string;
-  img: string;
-  parentId?: string;
-  favorited?: boolean;
-  ordered?: boolean;
-};
 export const Home = () => {
   const { items, isLoading, searchValue, setSearchValue } =
     React.useContext(HomeContext);

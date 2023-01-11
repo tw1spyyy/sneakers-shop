@@ -1,13 +1,9 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { HomeContext } from "../App";
-import { setIsCartOpen } from "../Redux/slices/CartSlice";
 
 export const Header: React.FC = () => {
-  const { calculateCartPrice } = React.useContext(HomeContext);
-
-  const dispatch = useDispatch();
+  const { setCartClosed, calculateCartPrice } = React.useContext(HomeContext);
 
   return (
     <div className="header">
@@ -23,7 +19,7 @@ export const Header: React.FC = () => {
       <div className="header__right">
         <ul className="header__right-list">
           <li
-            onClick={() => dispatch(setIsCartOpen())}
+            onClick={() => setCartClosed(true)}
             className="header__right-item"
           >
             <img className="header__right-icon" src="images/cart.svg" alt="" />

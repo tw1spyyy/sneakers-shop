@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeContext } from "../App";
-import { ItemType } from "./Pages/Home";
+import { ItemType } from "../Types etc/Types";
 
 export const SneakerItem = ({
   id,

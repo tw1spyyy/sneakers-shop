@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeContext } from "../../App";
-import { ItemType } from "../Pages/Home";
+import { ItemType } from "../../Types etc/Types";
 import { CartBottom } from "./CartBottom";
 import { CartEmpty } from "./CartEmpty";
 import { CartItem } from "./CartItem";

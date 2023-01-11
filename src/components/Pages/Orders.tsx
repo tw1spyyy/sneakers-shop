@@ -2,11 +2,10 @@ import axios from "axios";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HomeContext } from "../../App";
-import { FavoritesEmpty } from "../FavoritesEmpty";
+import { ItemType } from "../../Types etc/Types";
 import { OrdersEmpty } from "../OrdersEmpty";
 import { SneakerItem } from "../SneakerItem";
 import { SneakerSkeleton } from "../SneakerSkeleton";
-import { ItemType } from "./Home";
 
 export const Orders = () => {
   const [orders, setOrders] = React.useState([]);
